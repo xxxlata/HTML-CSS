@@ -37,10 +37,10 @@ CSS 특성 선택자는 주어진 특성의 존재 여부나 그 값에 따라 �
 구문:```[attr]```attr이라는 이름의 특성을 가진 요소를 선택합니다.<br>
 예제:```/* < a>가 title이라는 속성을 가지고 있을 때 */``` ```a[title]{color: purple;}```.<br>
 
-구문:```[attr=value]```attr이라는 이름의 특성값이 정확히 value인 요소를 선택합니다.<br>
+구문:```[attr=value]```attr이라는 이름의 특성값이 "정확히" value인 요소를 선택합니다.<br>
 예제:```/*< a> 에서 href가 "https://example.org" 를 가지고 있을때 */``` ```a[href="https://example.org"] {color:green;}```<br>
 
-구문:```[attr~=value]``` attr이라는 이름의 특성값이 정확히 value인 요소를 선택합니다. attr 특성은 공백으로 구분한 여러 개의 값을 가지고 있을 수 있습니다.<br>
+구문:```[attr~=value]``` attr이라는 이름의 특성값이 value를 포함하는 요소를 선택합니다. attr 특성은 공백으로 구분한 여러 개의 값을 가지고 있을 수 있습니다.<br>
 예제:```/*< a> 에서 class가 "logo" 라는 단어를 포함하고 있을때 */``` ```a[class~="logo"]{padding:20px;}```.
 
 구문:```[attr$=value]```접미사로 특성값을 가지는 모든 요소를 선택합니다.<br>
