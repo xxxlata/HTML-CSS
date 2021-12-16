@@ -21,8 +21,8 @@ clear는 "취소하다" 라는 뜻으로 left는 float 왼쪽 값을 취소하�
 
 ```clear: none``` 은 default값입니다.
 ```clear:  left``` 는 왼쪽 취소 입니다.
-```cear: right``` 는 오른쪽 취소 입니다.
-```cear: both``` 는 양 쪽 취소 입니다.
+```clear: right``` 는 오른쪽 취소 입니다.
+```clear: both``` 는 양 쪽 취소 입니다.
 
-따라서, floating 된 방향에 맞춰 글자나 다른 요소에 cear 속성을 이용해 줌으로써 원하는 레이아웃을 용이하게 만들 수 있습니다.
+따라서, floating 된 방향에 맞춰 글자나 다른 요소에 clear 속성을 이용해 줌으로써 원하는 레이아웃을 용이하게 만들 수 있습니다.
  
