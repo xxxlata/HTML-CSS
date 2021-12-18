@@ -22,7 +22,17 @@ block은 한 영역을 차지 하는 박스형태을 가지는 성질입니다.
 <특성><br>
 1.block은 height와 width 값을 지정 할 수 있다.<br>
 2.block은 margin과 padding을 지정 할 수 있다.
-
+<br>
+(ex)<br>
+```
+<header>
+<div>
+<h1> ~ <h6>
+<section>
+<p>
+<form>
+<footer>
+```
 
 ## inline ##
 
@@ -35,6 +45,13 @@ inline은 주로 텍스트를 주입 할 때 사용 되는 형태입니다.
 2.margin은 위아래엔 적용 되지 않는다.<br>
 3.padding은 좌우는 공간과 시각적인 부분이 모두 적용 되지만 위아래는 시각적으로는 추가되지만 공간을 차지 하지는 않는다.
 
+<br>
+(ex)<br>
+```
+<span>
+<a>
+<img>
+```
 ## inline-block
 
 inline-block 은 말그대로 inline의 특징과 block의 특징을 모두 가진 요소입니다. inline-block의 특징은 다음과 같습니다.
