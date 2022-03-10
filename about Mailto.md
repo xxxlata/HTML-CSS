@@ -38,3 +38,4 @@ bcc 미리 넣어주기
 <a href="mailto:xxxlata@test.com?subject=설문조사&body=[이름]%0D%0A[성별]">메일보내기</a>
 ```
 ## Gmail로 연동하기
+![mailto.png](./mailto.png)
