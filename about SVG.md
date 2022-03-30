@@ -19,9 +19,18 @@ SVG의 벡터 특성으로 인해 이미지는 해상도에 독립적이다. 모
 
 -------------------------------------------------------------------
 ### 사용방법
+SVG 코드는 다음의 HTML 요소를 사용해 문서에서 활용할 수 있다.
+```
+<img>
+<embed>
+<object>
+<iframe>
+<svg>
+```
 1.이미지 태그
 <br><br>
-HTML 이미지 태그를 사용하여 다른 이미지를 만드는 것과 같은 방법으로 SVG 이미지를 페이지에 포함 할 수 있다.
+HTML 이미지 태그를 사용하여 다른 이미지를 만드는 것과 같은 방법으로 SVG 이미지를 페이지에 포함 할 수 있다.<br>
+alt속성으로 이미지의 의미를 포함한 경우 적절한 대체 텍스트를 제공한다.
 
 ```
 <img src="myAwesomeSVG.svg" alt="My Awesome SVG">
@@ -32,6 +41,7 @@ HTML 이미지 태그를 사용하여 다른 이미지를 만드는 것과 같�
 <br>
  Modernizr을 사용하여 SVG가 지원되지 않는 경우 PNG로 교체 할 수있는 대체 기능을 제공 할 수 있다.
 <br><br>
+
 2.CSS 배경 이미지
 <br>
 다른 종류의 이미지를 요소에 부착하는 것과 같은 방법을 사용하여 CSS의 페이지에 SVG 이미지를 포함시킬 수도 있다.
@@ -56,15 +66,34 @@ background-image: url('myAwesomeSVGfallback.png');
 background-image: url('myAwesomeSVG.svg');
 }
 ```
-
-3.인라인 SVG
+3.임베드(embed)<br>
+임베드 요소를 사용해 SVG 요소를 HTML 문서에 포함하는 방법은 <embed> 요소의 src 속성에 파일의 경로를 설정하는 것이다.<br>
+이미지를 설명해야 할 필요가 있다면 적절한 대체 텍스트를 aria-label 속성을 통해 제공한다.
+```
+<embed src="king.svg" type="image/svg+xml" aria-label="킹 (체스 말)">
+```
+4.오브젝트(object)
+<br>
+오브젝트 요소를 사용해 SVG 요소를 HTML 문서에 포함하는 방법은 <object> 요소의 data 속성에 파일의 경로를 설정하는 것이다.<br>
+이미지를 설명해야 할 필요가 있다면 적절한 대체 텍스트를 aria-label 속성을 통해 제공한다.
+```
+<object data="king.svg" type="image/svg+xml" aria-label="킹 (체스 말)"></object>
+```
+5.아이프레임(iframe)
+<br>
+아이프레임 요소를 사용해 SVG 요소를 HTML 문서에 포함하는 방법은 <iframe> 요소의 src 속성에 파일의 경로를 설정하는 것이다.<br>
+이미지를 설명해야 할 필요가 있다면 적절한 대체 텍스트를 aria-label 속성을 통해 제공한다.
+```
+<iframe src="king.svg" aria-label="킹 (체스 말)"></iframe>
+```
+6.인라인 SVG
 <br>
 <br>
 SVG는 SVG 태그를 사용하여 문서에 곧바로 작성할 수 있다.
 ```
-<svgwidth="100px" height="100px"viewBox="0 0 100 100" version="1.1"xmlns="..."><title>My Awesome SVG</title<circle class="circle"cx="50" cy="50" r="50"fill="#FFFF00"></circle></svg>
+<svg width="100px" height="100px"viewBox="0 0 100 100" version="1.1"xmlns="..."><title>My Awesome SVG</title<circle class="circle"cx="50" cy="50" r="50"fill="#FFFF00"></circle></svg>
 ```
-SVG가 확장 가능하기 때문에 (이름에 있다) 폭과 높이 속성없이 태그를 제공하면 SVG는 컨테이너의 크기로 커진다.
+SVG가 확장 가능하기 때문에 폭과 높이 속성없이 태그를 제공하면 SVG는 컨테이너의 크기로 커진다.
 <br>
 페이지에 SVG를 작성하여 인라인 SVG에서 채우기를 제거하고 CSS에서 스타일을 지정할 수 있다.
 
@@ -80,5 +109,4 @@ fill: #FFFF00;
 더 자세한 SVG 설명 사이트:
 
 [https://ldrerin.tistory.com/398?category=772248](https://ldrerin.tistory.com/398?category=772248)
-
-[코코리의 그래픽 갖고놀기🎨]
+https://a11y.gitbook.io/graphics-aria/svg-graphics/html+svg
